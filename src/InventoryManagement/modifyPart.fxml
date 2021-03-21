@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryManagement.modifyPartController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <TextField fx:id="inv" maxWidth="-Infinity" prefWidth="150.0" translateX="130.0" translateY="120.0" />
+        <Label fx:id="modPartLabel" text="Modify Part" translateX="50.0" />
+        <RadioButton fx:id="inHouse" mnemonicParsing="false" onAction="#changePartView" text="In-House" translateX="200.0" />
+        <RadioButton fx:id="outsourced" mnemonicParsing="false" onAction="#changePartView" text="Outsourced" translateX="350.0" />
+        <TextField fx:id="id" maxWidth="-Infinity" prefWidth="150.0" translateX="130.0" translateY="60.0" />
+        <TextField fx:id="name" maxWidth="-Infinity" prefWidth="150.0" translateX="130.0" translateY="90.0" />
+        <TextField fx:id="price" maxWidth="-Infinity" prefWidth="150.0" translateX="130.0" translateY="150.0" />
+        <TextField fx:id="max" maxWidth="-Infinity" prefWidth="150.0" translateX="130.0" translateY="180.0" />
+        <TextField fx:id="varies" maxWidth="-Infinity" prefWidth="150.0" translateX="130.0" translateY="210.0" />
+        <Label text="ID" translateX="35.0" translateY="60.0" />
+        <Label text="Name" translateX="35.0" translateY="90.0" />
+        <Label text="Inv" translateX="35.0" translateY="120.0" />
+        <Label text="Price/Cost " translateX="35.0" translateY="150.0" />
+        <Label text="Max" translateX="35.0" translateY="180.0" />
+        <Label fx:id="label" text="Machine ID" translateX="35.0" translateY="210.0" />
+        <Label text="Min" translateX="315.0" translateY="180.0" />
+        <TextField fx:id="min" maxWidth="-Infinity" prefWidth="150.0" translateX="350.0" translateY="180.0" />
+        <Button fx:id="save" mnemonicParsing="false" onAction="#save" text="Save" translateX="350.0" translateY="250.0" />
+        <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancel" text="Cancel" translateX="400.0" translateY="250.0" />
+    </children>
+</GridPane>
